@@ -1,0 +1,6 @@
+import subprocess
+
+def capture_command_output(command):
+    result = subprocess.run(command, capture_output=True, text=True)
+    output = result.stdout.strip()
+    return output
